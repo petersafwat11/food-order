@@ -1,0 +1,99 @@
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 5;
+    background-color: rgba(148, 134, 134, 0.445);
+}
+
+.model {
+    position: fixed;
+    top: 25vh;
+    left: 22%;
+    width: 56%;
+    background-color: rgb(255, 255, 255);
+    z-index: 10;
+    border-radius: 15px;
+}
+.content {
+    padding: 2rem;
+    overflow: auto;
+}
+.list{
+    list-style: none;
+    max-height: 15rem;
+    margin-bottom: 1rem;
+    padding: 0;
+    overflow: auto;
+}
+.list__item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #892b06;
+}
+.title{
+    font-size: 1.5rem;
+}
+.detalis p {
+    display: flex;
+    justify-content: space-around;
+}
+.price, .amount{
+    margin-right: 4rem;
+    font-weight: bold;
+}
+.amount{
+    border: 1px solid rgba(122, 117, 117, 0.644);
+    border-radius: 5px;
+    padding: .2rem .8rem;
+}
+.add , .reduce{
+    padding: .2rem 1rem;
+    border-radius: 5px;
+    border: 1px solid #892b06;
+    margin: .3rem;
+    font-size: 1.6rem;
+    cursor: pointer;
+    color: #892b06;
+}
+.add:hover , .reduce:hover{
+    background-color: #892b06;
+    color: white;
+}
+.price{
+    color: #892b06;
+}
+
+.total-amount{
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+.actions{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: flex-end;
+}
+.close-btn, .order-btn{
+    margin-right: .7rem;
+    padding: .6rem 2rem;
+    border-radius: 30px;
+    border: 1px solid rgba(187, 47, 11, 0.582);
+    font-size: 1rem;
+    font-family: inherit;
+    cursor: pointer;
+} 
+.order-btn{
+    background-color: #892b06;
+    color: white;
+}
+.close-btn:hover, .order-btn:hover{
+    background-color: #5a1a01;
+}
+.close-btn:hover{
+    color: white;
+}
